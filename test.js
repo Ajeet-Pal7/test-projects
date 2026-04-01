@@ -5,7 +5,7 @@ require('dotenv').config();
 const transporter = nodemailer.createTransport({
     host: process.env.BREVO_SMTP_HOST,
     port: 587,
-    secure: true,
+    secure: false,
     auth: {
         user: "a6c8c1001@smtp-brevo.com",  
         pass: process.env.BREVO_SMTP_KEY
